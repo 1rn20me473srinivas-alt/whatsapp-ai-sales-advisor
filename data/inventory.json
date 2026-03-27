@@ -1,0 +1,44 @@
+[
+  {
+    "product": "Model X Pro Laptop",
+    "category": "Computers",
+    "features": ["Dual-fan vapor cooling", "32GB RAM", "Dedicated RTX Graphics"],
+    "solves_problem": "Overheating during heavy 3D rendering or video editing.",
+    "past_customer_reviews": ["Sarah (Architect): 'My old laptop crashed during AutoCAD exports. The Model X Pro keeps it ice cold. Best purchase ever.'"]
+  },
+  {
+    "product": "OfficeBook Lite",
+    "category": "Computers",
+    "features": ["14-hour battery life", "Ultra-lightweight 2.1 lbs", "Spill-resistant keyboard"],
+    "solves_problem": "Needs portability and long battery for travel or basic office work without carrying a charger.",
+    "past_customer_reviews": ["John (Consultant): 'I travel 4 days a week. This thing lasts through cross-country flights and then some. Zero charger anxiety.'"]
+  },
+  {
+    "product": "SoundMax Pro ANC Headphones",
+    "category": "Audio",
+    "features": ["Active Noise Cancellation", "40-hour battery", "Memory foam earcups"],
+    "solves_problem": "Distractions in loud open-office environments or airplanes.",
+    "past_customer_reviews": ["Mark (Developer): 'My office is so loud I couldn't focus. Put these on and it is dead silent. I can finally code in peace.'"]
+  },
+  {
+    "product": "ErgoSpine Executive Chair",
+    "category": "Furniture",
+    "features": ["Adjustable lumbar support", "Breathable mesh back", "4D armrests"],
+    "solves_problem": "Lower back pain from sitting at a desk for 8+ hours.",
+    "past_customer_reviews": ["Elena (Accountant): 'I had terrible sciatica during tax season. This chair completely fixed my posture and the pain is gone.'"]
+  },
+  {
+    "product": "VisionPad Pro Tablet",
+    "category": "Tablets",
+    "features": ["Color-accurate 4K screen", "Stylus with pressure sensitivity", "Anti-glare glass"],
+    "solves_problem": "Needs a digital canvas for precise graphic design or drawing.",
+    "past_customer_reviews": ["Maya (Illustrator): 'The pen feels exactly like drawing on paper. The 4K screen makes my colors pop perfectly.'"]
+  },
+  {
+    "product": "PowerBrick 20k Powerbank",
+    "category": "Accessories",
+    "features": ["20,000 mAh capacity", "65W fast charging", "Can charge a laptop"],
+    "solves_problem": "Devices dying on long trips with no access to wall outlets.",
+    "past_customer_reviews": ["David (Photographer): 'Saved my life on a camping shoot. Charged my camera and laptop simultaneously.'"]
+  }
+]
