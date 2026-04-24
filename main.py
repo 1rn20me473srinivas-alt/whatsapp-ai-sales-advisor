@@ -54,15 +54,25 @@ async def kapso_webhook(request: Request):
     if direction == "outbound":
         return {"status": "ignored", "reason": "outbound message"}
 
-    # Extract the actual text and phone number
-    message_text = msg_block.get("content") or msg_block.get("text", {}).get("body", "")
+    # Extract the phone number securely
     sender_phone = msg_block.get("phone_number") or msg_block.get("from") or payload.get("conversation", {}).get("phone_number")
+    
+    # 🎧 PHASE 2 AUDIO ROUTING
+    # Check if the message is an AUDIO voice note
+    if msg_block.get("type") == "audio":
+        # Reach into Kapso's auto-generated transcript!
+        message_text = msg_block.get("kapso", {}).get("transcript", {}).get("text", "")
+        print(f"\n🎧 VOICE NOTE RECEIVED. Transcript: '{message_text}'")
+        
+    # Check if the message is regular TEXT
+    else:
+        message_text = msg_block.get("content") or msg_block.get("text", {}).get("body", "")
 
     # If it's a blank message or just a status update (like a read receipt), ignore it
     if not message_text or not sender_phone:
         return {"status": "ignored"}
 
-    print(f"\n💬 CUSTOMER SAID: {message_text}")
+    print(f"\n💬 PROCESSING MESSAGE: {message_text}")
 
     # The AI Brain Rules
     system_prompt = f"""

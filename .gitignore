@@ -3,3 +3,6 @@ ngrok.exe
 venv/
 __pycache__/
 *.pyc
+# Ignore generated audio files
+audio/
+*.mp3
